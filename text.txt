@@ -1,0 +1,59 @@
+- 2-dars (Marker, Circle, Poligon)
+    - Circle nima?
+        
+        !image.png
+        
+        **Circle** — markaz + radius asosida chiziladigan **aylana zona**.
+        
+        Muhim: radius **metr** bilan beriladi ✅
+        
+        ### ✅ Circle qo‘shish
+        
+        ```jsx
+        const circle = L.circle([41.2995, 69.2401], {
+          radius: 300, // metr
+          color: "blue", // chegara rangi
+          fillColor: "blue", // ichki rang
+          fillOpacity: 0.2,
+        }).addTo(map);
+        
+        circle.bindPopup("Circle: radius 1500m");
+        ```
+        
+        ### Circle qachon kerak bo‘ladi?
+        
+        - “3 km ichidagi filiallar”
+        - delivery radius
+        - xavfsizlik zonasi (geofence)
+    - Polygon nima?
+        
+        !image.png
+        
+        **Polygon** — bir nechta nuqtalar ketma-ketligi bilan chiziladigan **ko‘pburchak**.
+        
+        Bu bilan hudud chegarasini chizasiz (masalan: tuman, mahalla, kampus) 🧭
+        
+        ### ✅ Polygon qo‘shish
+        
+        ```jsx
+        const polygonPoints = [
+          [41.32, 69.25],
+          [41.33, 69.29],
+          [41.305, 69.31],
+          [41.295, 69.275],
+        ];
+        
+        const polygon = L.polygon(polygonPoints, {
+          color: "green",
+          fillColor: "green",
+          fillOpacity: 0.2,
+        }).addTo(map);
+        
+        polygon.bindPopup("Polygon hudud");
+        ```
+        
+        ### Polygon qayerda ishlatiladi?
+        
+        - tuman/mahalla chegarasi
+        - “service area” (qaysi hududlarga xizmat bor)
+        - xaritada hudud tanlash
