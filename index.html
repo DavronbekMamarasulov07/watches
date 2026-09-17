@@ -7,124 +7,222 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-  <nav>
-    <!-- Bu qism Asomiddin uchun -->
-  </nav>
+    <nav class="bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-blue-600">
+                Asomiddin
+            </a>
+
+            <!-- Menu -->
+            <div class="flex items-center gap-8">
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition">
+                    Bosh sahifa
+                </a>
+
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition">
+                    Biz haqimizda
+                </a>
+
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition">
+                    Xizmatlar
+                </a>
+
+                <a href="#" class="text-gray-700 hover:text-blue-600 transition">
+                    Aloqa
+                </a>
+
+                <!-- Button -->
+                <button class="bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 transition">
+                    Bog‘lanish
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
 
   <main>
-    <section id="products">
-      <!-- bu qism Abdulloh uchun  -->
-    </section>
-    <section id="about-us" class="relative overflow-hidden bg-slate-950 py-24 text-white">
-  <!-- Декоративные элементы -->
-  <div class="absolute -left-32 top-20 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl"></div>
-  <div class="absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-purple-600/20 blur-3xl"></div>
 
-  <div class="relative mx-auto max-w-6xl px-6">
-    
-    <!-- Верхняя часть -->
-    <div class="mb-16 max-w-3xl">
-      <span class="mb-4 inline-block rounded-full border border-blue-400/20 bg-blue-500/10 px-4 py-2 text-sm font-medium text-blue-300">
-        About Us
-      </span>
 
-      <h2 class="text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-        Создаём решения,
-        <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-          которые имеют значение.
-        </span>
+
+    <section id="products" class="py-20 bg-slate-950">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center mb-12">
+      <p class="text-blue-400 font-semibold uppercase tracking-widest text-sm">
+        Products
+      </p>
+      <h2 class="text-4xl md:text-5xl font-bold text-white mt-3">
+        Our Products
       </h2>
-
-      <p class="mt-6 text-lg leading-8 text-slate-400">
-        Мы объединяем технологии, дизайн и простые идеи, чтобы создавать
-        удобные цифровые продукты для людей и бизнеса.
+      <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+        Discover our collection of modern and high-quality products.
       </p>
     </div>
 
-    <!-- Карточки -->
-    <div class="grid gap-6 md:grid-cols-3">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-      <!-- Card 1 -->
-      <div class="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-blue-400/30 hover:bg-white/[0.07]">
-        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10 text-2xl">
-          🚀
+      <!-- Product 1 -->
+      <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:-translate-y-2 hover:border-blue-500/50 transition-all duration-300">
+        <div class="h-56 bg-slate-800 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80"
+            alt="Wireless Headphones"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
         </div>
 
-        <h3 class="text-xl font-semibold">
-          Современный подход
-        </h3>
+        <div class="p-5">
+          <span class="text-xs text-blue-400 font-medium">AUDIO</span>
 
-        <p class="mt-3 leading-7 text-slate-400">
-          Используем современные технологии и создаём быстрые,
-          удобные и понятные интерфейсы.
-        </p>
+          <h3 class="text-xl font-semibold text-white mt-2">
+            Wireless Headphones
+          </h3>
+
+          <p class="text-slate-400 text-sm mt-2">
+            Premium sound with comfortable wireless design.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+            <span class="text-xl font-bold text-white">$129</span>
+
+            <button class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-medium transition">
+              Buy Now
+            </button>
+          </div>
+        </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-purple-400/30 hover:bg-white/[0.07]">
-        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-500/10 text-2xl">
-          💡
+
+      <!-- Product 2 -->
+      <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:-translate-y-2 hover:border-blue-500/50 transition-all duration-300">
+        <div class="h-56 bg-slate-800 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80"
+            alt="Smart Watch"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
         </div>
 
-        <h3 class="text-xl font-semibold">
-          Простые идеи
-        </h3>
+        <div class="p-5">
+          <span class="text-xs text-blue-400 font-medium">WEARABLE</span>
 
-        <p class="mt-3 leading-7 text-slate-400">
-          Сложные задачи превращаем в простые решения,
-          которыми приятно пользоваться каждый день.
-        </p>
+          <h3 class="text-xl font-semibold text-white mt-2">
+            Smart Watch
+          </h3>
+
+          <p class="text-slate-400 text-sm mt-2">
+            Stay connected with a sleek and powerful smartwatch.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+            <span class="text-xl font-bold text-white">$199</span>
+
+            <button class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-medium transition">
+              Buy Now
+            </button>
+          </div>
+        </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="group rounded-3xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-pink-400/30 hover:bg-white/[0.07]">
-        <div class="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-pink-500/10 text-2xl">
-          ❤️
+
+      <!-- Product 3 -->
+      <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:-translate-y-2 hover:border-blue-500/50 transition-all duration-300">
+        <div class="h-56 bg-slate-800 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=800&q=80"
+            alt="Laptop"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
         </div>
 
-        <h3 class="text-xl font-semibold">
-          Для людей
-        </h3>
+        <div class="p-5">
+          <span class="text-xs text-blue-400 font-medium">TECH</span>
 
-        <p class="mt-3 leading-7 text-slate-400">
-          В центре каждого проекта находятся реальные потребности
-          пользователей и их комфорт.
-        </p>
+          <h3 class="text-xl font-semibold text-white mt-2">
+            Pro Laptop
+          </h3>
+
+          <p class="text-slate-400 text-sm mt-2">
+            Powerful performance for work, creativity and gaming.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+            <span class="text-xl font-bold text-white">$899</span>
+
+            <button class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-medium transition">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Product 4 -->
+      <div class="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:-translate-y-2 hover:border-blue-500/50 transition-all duration-300">
+        <div class="h-56 bg-slate-800 overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80"
+            alt="Camera"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          >
+        </div>
+
+        <div class="p-5">
+          <span class="text-xs text-blue-400 font-medium">CAMERA</span>
+
+          <h3 class="text-xl font-semibold text-white mt-2">
+            Pro Camera
+          </h3>
+
+          <p class="text-slate-400 text-sm mt-2">
+            Capture sharp and detailed photos wherever you go.
+          </p>
+
+          <div class="flex items-center justify-between mt-5">
+            <span class="text-xl font-bold text-white">$649</span>
+
+            <button class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-medium transition">
+              Buy Now
+            </button>
+          </div>
+        </div>
       </div>
 
     </div>
-
-    <!-- Нижний блок -->
-    <div class="mt-10 flex flex-col items-center justify-between gap-6 rounded-3xl border border-white/10 bg-white/[0.04] p-8 text-center sm:flex-row sm:text-left">
-      
-      <div>
-        <p class="text-2xl font-bold">
-          Делаем больше, чем просто сайты.
-        </p>
-
-        <p class="mt-2 text-slate-400">
-          Создаём цифровой опыт, который хочется использовать.
-        </p>
-      </div>
-
-      <a
-        href="#contact"
-        class="inline-flex items-center rounded-full bg-white px-6 py-3 font-semibold text-slate-950 transition hover:scale-105 hover:bg-blue-100"
-      >
-        Связаться с нами
-        <span class="ml-2">→</span>
-      </a>
-
-    </div>
-
   </div>
 </section>
+    
+
     <section id="contact">
       <!-- bu qism Fozilbek uchun  -->
     </section>
   </main>
-  <footer>
-    <!-- bu qism Shavkatbek uchun  -->
+    
+    <footer class="bg-black text-white mt-20 border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-6 py-12 text-center">
+        <h2 class="text-3xl font-bold mb-3">DriveX</h2>
+
+        <p class="text-gray-400 mb-6">
+            Premium cars. Powerful experience.
+        </p>
+
+        <div class="flex justify-center gap-8 mb-8">
+            <a href="#" class="hover:text-gray-400 transition">Home</a>
+            <a href="#" class="hover:text-gray-400 transition">Cars</a>
+            <a href="#" class="hover:text-gray-400 transition">About</a>
+            <a href="#" class="hover:text-gray-400 transition">Contact</a>
+        </div>
+
+        <div class="border-t border-gray-800 pt-5">
+            <p class="text-sm text-gray-500">
+                © 2026 DriveX. All rights reserved.
+            </p>
+        </div>
+    </div>
+    
   </footer>
   
 </body>
